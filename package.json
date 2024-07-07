@@ -1,17 +1,21 @@
 {
   "name": "simple",
   "version": "1.0.0",
-  "description": "we need to build another step right here this is not just a test but this is just the best of all this is the test project for our jenkins",
+  "description": "we need to build another step right here this is not jus is the test project for our jenkins",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build":"echo 'no build'",
-    "deploy":"gh-pages public"
+    "build": "echo 'no build'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0"
-  }
+  },
+  "homepage": "https://ivviafter.github.io/simple"
 }
+
