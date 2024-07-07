@@ -1,0 +1,17 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "we need to build another step right here this is not just a test but this is just the best of all this is the test project for our jenkins",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build":"echo 'no build'",
+    "deploy":"gh-pages public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
