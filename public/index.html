@@ -3,38 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this is just a test</title>
-    <style>
-        img{
-        width:300px;
-        height:300px;
-        object-fit:cover;    
-        }
-
-        body{
-        width:100%;
-        height:100vh;
-        background:url("https://images.pexels.com/photos/967016/pexels-photo-967016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-position:center;
-        background-size:cover;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    @font-face {
+        font-family: lora;
+        src: url(./Lora-VariableFont_wght.ttf);
+    }
+    @font-face {
+        font-family:playfair ;
+        src: url(./Caprasimo-Regular.ttf);
+    }
+    *{
+        font-family: lora;
+    }
+    h1,h2{
+        font-family: playfair;
+        font-size: 49px;
+    }
+    nav{
+        display: flex;
+    }
+    .western{
+        height: 500px;
+        padding-left: 124px;
+        padding-top: 50px;
+        width: 540px;
+        float: right;
+        transform: scale(.9);
+    }
+    .western-img{
+        mask-image: url(./western.svg);
+        -webkit-mask-image: url(./western.svg);
+        mask-repeat: no-repeat;
+        width: 100%;
+        float: right;
+        display: block;
+        overflow: hidden;
+        height: 100%;
+        object-fit: cover;
+    }
+    .boder{
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+        gap: 73px;
+
+    }
+    .text{
+        width: 500px;
+    }
+    header{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-content: center;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 43px;
+    }
+    .kid{
+        display: flex;
+        align-items: center;
+        background: rgba(17, 0, 255, 0.27);
+        border-radius: 50px;
+        max-width: max-content;
+        padding:7px 8px;
+    }
+    .side-text{
+        background: re;
+    }
+    .div img{
+        width: 90%;
+        margin: auto;
+        display: block;
+        margin-top: 8px;
+
+    }
+    .part p{
+        font-size: 19px;
+    }
+ 
+    .part span{
+        font-weight: bold;
+    }
+    .the1{
+        color: orange;
+    }
+    .the2{
+        color: dodgerblue;
+    }
+.the3{
+    color: green;
+}
+.two{
+    border: none;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    font-family: playfair;
+    font-size: 16px;
+}
+.imager{
+    position: relative;
+    display: grid;
+    place-content: center;
+    float: right;
+}
+.box img{
+    position:absolute;
+    z-index: 200;
+}
+.box img:nth-child(1){
+    top: 9px;
+    padding: 3px;
+    right: 90px;
+}
+.box img:nth-child(2){
+    top: 227px;
+    padding: 3px;
+    border-radius: 50%;
+    z-index: 12;
+    right: -99px;
+}
+.box img:nth-child(3){
+    bottom: 387px;
+    padding: 3px;
+    border-radius: 50%;
+    z-index: 12;
+    right: -119px;
+}
+.box img:nth-child(4){
+    top: 9px;
+    padding: 3px;
+    left: 199px;
+}
+.box img:nth-child(5){
+    top: 129px;
+    padding: 3px;
+    left: -36px;
+}
+.box img:nth-child(6){
+    top: 129px;
+    padding: 3px;
+    right: 229px;
+}
+.line{
+    width: 500px;
+}
+.div{
+    position: relative;
+}
+.div ul{
+    position: absolute;
+    top: 34px;
+    left: 12px;
+    transform: translate(-20%,);
+}
+.profil li{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 8px;
+   
+}
+.profil li img{
+    width: 47px;
+    border: 3px solid rgba(231, 230, 230, 0.742);
+    height: 47px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+
+}
+body{
+    position: relative;
+background:lavenderblush
+}
+.state div,.state p{
+position: absolute;
+width: 200px;
+height:200px;
+
+}
+.state div:nth-child(1){
+background: rgba(0, 21, 255, 0.31);
+filter: blur(100px);
+z-index: -13;top: 90px;
+}
+.state div:nth-child(2){
+background: rgba(255, 0, 81, 0.31);
+filter: blur(120px);
+transform: scale(.7);
+z-index: -13;top: 90px;
+}
+.state div:nth-child(3){
+background: rgba(13, 0, 255, 0.12);
+filter: blur(100px);
+transform: scale(.7);
+z-index: -13;top: 230px;right: 12px;
+}
+.state div:nth-child(4){
+background: rgba(33, 1, 141, 0.11);
+filter: blur(120px);
+transform: scale(.7);
+z-index: -13;top: 230px;
+right: 12px;
+}
+
+.box-me{
+    display: flex ;
+    border-radius: 94px;
+    background: black;
+    padding: 18px;
+    align-items: center
+    ;gap: 12px;color: white;fill: white;
+}
+.icon{
+    display: flex;
+    gap: 13px;
+}
+.des h1,.des p{
+    font-size: 24px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    gap: 13px;
+}
+.flex li{
+    display: block;
+}
+
+</style>
 <body>
-    <h1 style="color:red;padding:3px;">
+    <div class="state">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <img src="bbblurry (1).svg" alt="">
 
+        </div>
+       <p>
+        <img src="./star.svg" alt="">
+       </p>
+    </div>
+    <header>
+        <nav>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Jenkins</a>
+                <a href="#">Jack</a>
+                <a href="#">Scripting</a>
+            </div>
+            <div class="logo">
+                <img src="./img-19082023-111310.png" class="logo" width="100">
+            </div>
+            
+            <div>
+                <img src="./bar.svg" alt="" width="40">
+                <img src="./search.svg" alt="" width="40">
+            </div>
+        </nav>
+        <div class="boder">
+            <div class="side text ">
+                <div class="kid">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                      
+                    Project de scripting L3AS</div>
+                    <div class="part">
+                        
+                    <h1>
+                        AUTOMATION , voir Jenkins en Action 
+                    </h1>
+                    <img class="line" src="./line.svg" alt="">
+                    <p>
+                        Dans le cadre de l'expose sur le cours de scripting ,
+                        les etudiants ayant obtenue comme sujet JENKINS on decider de vous 
+                        montrez ce dernier en live(
 
-voici la princesse Dorcas et le prince caleb</h1>
-    <p>juste un signe que nous sommes en train de changer les choses ici< /p> 
-    <a href="#">voici un lien pour voir plus"</a>
-    <img src="https://images.pexels.com/photos/25489323/pexels-photo-25489323.jpeg?cs=srgb&dl=pexels-alexander-mass-748453803-25489323.jpg&fm=jpg&_gl=1*ylehfn*_ga*MTg3MTQ2NTgxNi4xNzIwMzc2NzM3*_ga_8JE65Q40S6*MTcyMDM3NjczNy4xLjEuMTcyMDM3Njc5Mi4wLjAuMA.."/>
-    <p>Pour ce faire ,nous allons juste vous montrer cette texchnologie</p>
-<ul>
-voici une liste des affaires a donners
-<li>Brew</li>
-<li>Liver</li>
-<li>Notion</li>
-</ul>    
-<script src="../src/index.js"></script>
+                         <span class="the1">Build</span>,                        
+                         <span class="the2">Test</span>, and                        
+                         <span class="the3">Deploy</span>)                        
+                        
+                        
+                        
+                    </p>
+                   
+                    <button class="two">
+                        <a href="#">Directed by Mr Jack M.</a>
+                    </button>
+                    <div class="div">
+                        <img src="./regardless.svg" class="reserved" alt="">
+                        <ul class="profil">
+                            <li>
+                                <img src="./dorcasl.jpg" alt="">
+                                <span>Dorcas </span>
+                            </li>
+                            <li>
+                                <img src="./dorcasm.jpg" alt="">
+                                <span>Dorcas Mpoyo</span>
+                            </li>
+                            <li>
+                                <img src="./bryanna.jpg" alt="">
+                                <span>Bryane</span>
+                            </li>
+                            <li>
+                                <img src="./josue.jpg" alt="">
+                                <span>Pasteur josue</span>
+                            </li>
+                            <li>
+                                <img src="./pierre.jpg" alt="">
+                                <span>Pierre</span>
+                            </li>
+                            <li>
+                                <img src="./plamedie.jpg" alt="">
+                                <span>Plamedi</span>
+                            </li>
+                            <div class="flex">
+
+                                <li>
+                                    <img src="./bea.jpg" alt="">
+                                    <span>Bea</span>
+                                </li>
+                                <li>
+                                    <img src="./jonathan.jpg" alt="">
+                                    <span>Jonathan</span>
+                                </li>
+                                <li>
+                                    <img src="./caleb.jpg" alt="">
+                                    <span>Caleb Longrich</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    </div>
+
+            </div>
+            <div class="side imager">
+                <div class="box">
+                    <img width="80" src="./jest-js-icon.svg" alt="">
+                    <img width="80" src="./github-pages-examples.png" alt="">
+                    <img width="80" src="./vercel1868.jpg" alt="">
+                    <img width="80" src="./339px-Jenkins_logo.svg.png" alt="">
+                    <img width="80" src="./github-mark.svg" alt="">
+                    <img width="80" src="./log__.svg" alt="">
+                </div>
+                <div class="western">
+                    <img src="./pexels-valeriiamiller-20801045.jpg" class="western-img" alt="">
+                    <!-- <video src="./Ayra Starr - Bad Vibes ft. Seyi Vibez (Official Music Video)(360P).mp4" class="western-img" autoplay controls></video> -->
+                </div>
+                <div class="box-me">
+                    <div class="pre">
+                        <img src="./log__under.svg" width="130" alt="">
+                    </div>
+                    <div class="dec">
+                        <h3>Made by Undeplx .collective</h3>
+                        <p>A web-crafting agency tailored to small businesses</p>
+                        <div class="icon">
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"/></svg>
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/></svg>
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"/></svg>
+                            <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="des">
+                    <h1>We have been making countless of web-crafting assets</h1>
+                    <h1>from 2023 and still on the way to</h1>
+                    <h1>Building a trusthworthy</h1>
+                    <h1>Empire</h1><br><br><br>
+                    <p>
+                        &copy; No copyright reserved 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
